@@ -5,5 +5,6 @@ dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp
 bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2Ys
 VfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
 <script src="<?= BASEURL; ?>/js/bootstrap.js"></script>
+<script src="<?= BASEURL; ?>/js/script.js"></script>
 </body>
 </html>
