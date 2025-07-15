@@ -6,12 +6,16 @@
     </div>
 </div>
 
-<div class="row">
+<div class="row mb-3">
     <div class="col-lg-6">
-        <button type="button" class="btn btn-primary tomboltambahData" data-bs-toggle="modal" data-target="FormModal">
+<button type="button" class="btn btn-primary tomboltambahData" data-bs-toggle="modal" data-target="FormModal">
             Tambah data mahasiswa
         </button>
-        <br><br>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-lg-6">
         <h3>Daftar Mahasiswa</h3>
         <ul class="list-group">
         <?php foreach( $data['mhs'] as $mhs ) : ?>
