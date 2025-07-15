@@ -1,6 +1,14 @@
 <?php
 
 class Mahasiswa_model {
+    private $table ='mahasiswa';
+    private$db;
+
+    public function __construct()
+    {
+        $this->db-> = new Database;
+    }
+
     private $mhs = [
         [
             "nama" => "nindi",
@@ -24,7 +32,8 @@ class Mahasiswa_model {
 
      public function getAllMahasiswa()
      {
-        return $this->mhs; 
+        $this->db->query('SELECT * FROM ' . $this->table);
+        return $this->db->resultSet();
      }
 
 
