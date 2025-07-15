@@ -18,4 +18,29 @@ class Mahasiswa extend Controller {
     $this->('templates/detail', $data);
     $this->('templates/footer');
     }
+
+    public function tambah()
+    {
+        if( $this->model('Mahasiswa_model')->tambahDataMahasiswa($_POST)> 0 ) {
+            Flasher::setFlash('berhasil', 'ditambahkan', 'success');
+            header('Location:'. BASEURL . '/mahasiswa');
+            exit;
+        } else {
+            Flasher::setFlash('berhasil', 'ditambahkan', 'danger');
+            header('Location:'. BASEURL . '/mahasiswa');
+            exit;
+        }
+}
+    public function hapus($id)
+    {
+        if( $this->model('Mahasiswa_model')->tambahDataMahasiswa($id) > 0 ) {
+            Flasher::setFlash('berhasil', 'dihapus', 'success');
+            header('Location:'. BASEURL . '/mahasiswa');
+            exit;
+        } else {
+            Flasher::setFlash('berhasil', 'ditambahkan', 'danger');
+            header('Location:'. BASEURL . '/mahasiswa');
+            exit;
+        }
+}
 }
